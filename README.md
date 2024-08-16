@@ -1,2 +1,2 @@
-# C-modules
+# CPP-modules
 learning C++
