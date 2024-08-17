@@ -1,21 +1,25 @@
 #include "Weapon.hpp"
+#include "HumanA.hpp"
 
-/* private:
-		std::string	Weapon;
+/* class HumanA {
+	private:
+		Weapon& weapon;
 		std::string	name;
 	public:
-		HumanA::HumanA();
-		HumanA::~HumanA();
-		void	attack(); */
+		HumanA(std::string name, Weapon& weapon);
+		~HumanA();
 
-void	HumanA::HumanA() {
+		void	attack();
+};*/
 
+HumanA::HumanA(std::string name, Weapon& weapon) : weapon(weapon), name(name) {
+	this->name = name;
+	this->weapon = weapon;
 };
 
-void	HumanA::~HumanA() {
-
+HumanA::~HumanA() {
 };
 
 void	HumanA::attack() {
-	std::cout << this->name << " attacks with their " << this->Weapon << "\n";
+	std::cout << this->name << " attacks with their " << this->weapon.getType() << "\n";
 };
