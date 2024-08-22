@@ -24,4 +24,5 @@ class ClapTrap {
 		unsigned int	attackDamage;		
 };
 
+
 #endif

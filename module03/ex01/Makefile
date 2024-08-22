@@ -1,9 +1,9 @@
-NAME		= claptrap
+NAME		= scavtrap
 CXX			= c++
 BIN			= bin
 INCLUDES	= -I./include
 CXXFLAGS	= -Wall -Werror -Wextra -std=c++98
-SRC			= src/main.cpp src/ClapTrap.cpp
+SRC			= src/main.cpp src/ClapTrap.cpp src/ScavTrap
 OBJS		= $(SRC:src/%c=$(BIN)/%o)
 RM			= rm -rf
 
