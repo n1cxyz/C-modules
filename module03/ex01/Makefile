@@ -3,7 +3,7 @@ CXX			= c++
 BIN			= bin
 INCLUDES	= -I./include
 CXXFLAGS	= -Wall -Werror -Wextra -std=c++98
-SRC			= src/main.cpp src/ClapTrap.cpp src/ScavTrap
+SRC			= src/main.cpp src/ClapTrap.cpp src/ScavTrap.cpp
 OBJS		= $(SRC:src/%c=$(BIN)/%o)
 RM			= rm -rf
 

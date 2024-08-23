@@ -6,9 +6,14 @@
 
 class ScavTrap : public ClapTrap{
 	public:
+		ScavTrap();
+		ScavTrap(std::string name, unsigned int hitPoints, unsigned int energyPoints, unsigned int attackDamage);
+		~ScavTrap();
+
+		void	attack(const std::string& target);
+		void	guardGate();
 		
-	private:
-		void	guardGate();			
+	private:			
 };
 
 #endif

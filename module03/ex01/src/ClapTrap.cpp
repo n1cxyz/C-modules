@@ -19,13 +19,16 @@
 		unsigned int	energyPoints;
 		unsigned int	attackDamage;		
 }; */
+ClapTrap::ClapTrap() {
+	std::cout << "Default constructor from base class has been called" << "\n";
+}
 
-ClapTrap::ClapTrap(std::string name) {
-	std::cout << "Contructor has been called" << "\n";
+ClapTrap::ClapTrap(std::string name, unsigned int hitPoints, unsigned int energyPoints, unsigned int attackDamage) {
+	std::cout << "Contructor from base class has been called" << "\n";
 	this->name = name;
-	this->hitPoints = 10;
-	this->energyPoints = 10;
-	this->attackDamage = 0;
+	this->hitPoints = hitPoints;
+	this->energyPoints = energyPoints;
+	this->attackDamage = attackDamage;
 };
 
 ClapTrap::ClapTrap(const ClapTrap& claptrap) {
@@ -48,7 +51,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& claptrap) {
 };
 
 ClapTrap::~ClapTrap() {
-	std::cout << "Destructor has been called" << "\n";
+	std::cout << "Destructor from base class has been called" << "\n";
 };
 
 void ClapTrap::attack(const std::string& target) {
