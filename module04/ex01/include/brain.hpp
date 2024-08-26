@@ -11,7 +11,7 @@ class Brain {
 		Brain& operator = (const Brain& brain);
 
 	protected:
-		std::string* ideas;
+		std::string ideas[100];
 
 };
 

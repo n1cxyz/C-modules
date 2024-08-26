@@ -10,7 +10,6 @@ class Cat : public Animal {
 		Cat(const Cat &cat);
 		~Cat();
 		Cat& operator = (const Cat &cat);
-
 		void makeSound(void) const;
 	private:
 		Brain* brain;
